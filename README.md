@@ -4,7 +4,7 @@ A [Yeoman](http://yeoman.io) generator for [AngularJS](http://angularjs.org) and
 
 ## Installation
 
-Install [Git](http://git-scm.com), [node.js](http://nodejs.org), and [Ruby](https://www.ruby-lang.org/).  The development mode also requires [SQLite](http://www.sqlite.org).
+Install [Git](http://git-scm.com) and [node.js](http://nodejs.org).  The development mode also requires [SQLite](http://www.sqlite.org).
 
 Install Yeoman:
 
@@ -22,9 +22,9 @@ In a new directory, generate the service:
 
 Run the service:
 
-    rackup
+    node app.js
 
-Your service will run at [http://localhost:9292](http://localhost:9292).
+Your service will run at [http://localhost:3000](http://localhost:3000).
 
 
 ## Creating a persistent entity
@@ -45,7 +45,7 @@ You will be asked to specify attributes for the entity, where each attribute has
 
 Run the service:
 
-    rackup
+    node app.js
     
 A client-side AngularJS application will now be available by running
 
