@@ -43,6 +43,8 @@ You will be asked to specify attributes for the entity, where each attribute has
 - for an Enum attribute, a list of enumerated values
 - whether the attribute is required
 
+Files that are regenerated will appear as conflicts.  Allow the generator to overwrite these files as long as no custom changes have been made.
+
 Run the service:
 
     node app.js
