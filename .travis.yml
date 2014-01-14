@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - '0.10'
+  - '0.8'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-angular-express-sequelize' ]; then cd .. && eval "mv $currentfolder generator-angular-express-sequelize" && cd generator-angular-express-sequelize; fi
+
