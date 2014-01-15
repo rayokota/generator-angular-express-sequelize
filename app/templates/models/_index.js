@@ -2,14 +2,11 @@ var fs        = require('fs')
   , path      = require('path')
   , Sequelize = require('sequelize')
   , lodash    = require('lodash')
-  //, sequelize = new Sequelize('sequelize_test', 'root', null)
-  , db        = {}
-
-var Sequelize = require('sequelize')
   , sequelize = new Sequelize('sequelize_test', 'root', null, {
       dialect: "sqlite", // or 'sqlite', 'postgres', 'mariadb'
       storage: "/tmp/my.db",
     })
+  , db        = {}
 
 fs
   .readdirSync(__dirname)
