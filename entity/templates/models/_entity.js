@@ -8,7 +8,11 @@ module.exports = function(sequelize, DataTypes) {
         <% if (attr.maxLength) { if (attr.minLength) { %>len: [<%= attr.minLength %>, <%= attr.maxLength %>],<% } else { %>len: [0, <%= attr.maxLength %>],<% } };%>
         <% if (attr.min) { %>min: <%= attr.min %>,<% };%>
         <% if (attr.max) { %>max: <%= attr.max %>,<% };%>
-      }
+      },
+      <% if (attr.attrType == 'Date') { %>get: function() {
+        var value = this.getDataValue('<%= attr.attrName %>')
+        return value ? value.toISOString().substring(0, 10) : value
+      }<% }; %>
     },
   <% }); %>
   })
