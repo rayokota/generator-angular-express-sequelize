@@ -1,0 +1,483 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', '--force' ]
+2 info using npm@1.2.30
+3 info using node@v0.8.26
+4 warn using --force I sure hope you know what you are doing.
+5 verbose publish [ '.' ]
+6 verbose read json /Users/ryokota/code/generator-angular-express-sequelize/package.json
+7 verbose cache add [ '.', null ]
+8 verbose cache add name=undefined spec="." args=[".",null]
+9 verbose parsed url { pathname: '.', path: '.', href: '.' }
+10 silly lockFile 3a52ce78- .
+11 verbose lock . /Users/ryokota/.npm/3a52ce78-.lock
+12 verbose read json package.json
+13 verbose tar pack [ '/var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz',
+13 verbose tar pack   '.' ]
+14 verbose tarball /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz
+15 verbose folder .
+16 info prepublish generator-angular-express-sequelize@0.1.3
+17 silly lockFile 1f1177db-tar tar://.
+18 verbose lock tar://. /Users/ryokota/.npm/1f1177db-tar.lock
+19 silly lockFile 581aca24-0653-0-49233958846889436-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz
+20 verbose lock tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz /Users/ryokota/.npm/581aca24-0653-0-49233958846889436-tmp-tgz.lock
+21 silly lockFile 1f1177db-tar tar://.
+22 silly lockFile 1f1177db-tar tar://.
+23 silly lockFile 581aca24-0653-0-49233958846889436-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz
+24 silly lockFile 581aca24-0653-0-49233958846889436-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz
+25 verbose tar unpack /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz
+26 silly lockFile c8d6686d-0653-0-49233958846889436-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package
+27 verbose lock tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package /Users/ryokota/.npm/c8d6686d-0653-0-49233958846889436-package.lock
+28 silly lockFile 581aca24-0653-0-49233958846889436-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz
+29 verbose lock tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz /Users/ryokota/.npm/581aca24-0653-0-49233958846889436-tmp-tgz.lock
+30 silly gunzTarPerm modes [ '755', '644' ]
+31 silly gunzTarPerm extractEntry package.json
+32 silly gunzTarPerm extractEntry .npmignore
+33 silly gunzTarPerm extractEntry README.md
+34 silly gunzTarPerm extractEntry LICENSE
+35 silly gunzTarPerm extractEntry entity/index.js
+36 silly gunzTarPerm extractEntry entity/templates/_generator.json
+37 silly gunzTarPerm extractEntry entity/templates/models/_entity.js
+38 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-controller.js
+39 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-router.js
+40 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-service.js
+41 silly gunzTarPerm extractEntry entity/templates/public/views/entity/_entities.html
+42 silly gunzTarPerm extractEntry entity/templates/routes/_entities.js
+43 silly gunzTarPerm extractEntry app/index.js
+44 silly gunzTarPerm extractEntry app/templates/_app.js
+45 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+46 silly gunzTarPerm extractEntry app/templates/_generator.json
+47 silly gunzTarPerm extractEntry app/templates/_package.json
+48 silly gunzTarPerm extractEntry app/templates/bowerrc
+49 silly gunzTarPerm extractEntry app/templates/editorconfig
+50 silly gunzTarPerm extractEntry app/templates/_bower.json
+51 silly gunzTarPerm extractEntry app/templates/jshintrc
+52 silly gunzTarPerm extractEntry app/templates/models/_index.js
+53 silly gunzTarPerm extractEntry app/templates/public/_index.html
+54 silly gunzTarPerm extractEntry app/templates/public/css/app.css
+55 silly gunzTarPerm extractEntry app/templates/public/js/_app.js
+56 silly gunzTarPerm extractEntry app/templates/public/js/home/_home-controller.js
+57 silly gunzTarPerm extractEntry app/templates/public/views/home/_home.html
+58 silly gunzTarPerm extractEntry app/templates/README.md.erb
+59 silly gunzTarPerm extractEntry app/templates/gitignore
+60 silly gunzTarPerm extractEntry .gitattributes
+61 silly gunzTarPerm extractEntry .editorconfig
+62 silly gunzTarPerm extractEntry .jshintrc
+63 silly gunzTarPerm extractEntry .travis.yml
+64 silly gunzTarPerm extractEntry test/test-creation.js
+65 silly gunzTarPerm extractEntry test/test-load.js
+66 verbose read json /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package/package.json
+67 silly lockFile c8d6686d-0653-0-49233958846889436-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package
+68 silly lockFile c8d6686d-0653-0-49233958846889436-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package
+69 silly lockFile 581aca24-0653-0-49233958846889436-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz
+70 silly lockFile 581aca24-0653-0-49233958846889436-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/tmp.tgz
+71 verbose from cache /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package/package.json
+72 verbose tar pack [ '/Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz',
+72 verbose tar pack   '/var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package' ]
+73 verbose tarball /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+74 verbose folder /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package
+75 silly lockFile c8d6686d-0653-0-49233958846889436-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package
+76 verbose lock tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package /Users/ryokota/.npm/c8d6686d-0653-0-49233958846889436-package.lock
+77 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+78 verbose lock tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz /Users/ryokota/.npm/bb005487-ress-sequelize-0-1-3-package-tgz.lock
+79 silly lockFile c8d6686d-0653-0-49233958846889436-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package
+80 silly lockFile c8d6686d-0653-0-49233958846889436-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195250653-0.49233958846889436/package
+81 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+82 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+83 silly lockFile e51d5e62--express-sequelize-0-1-3-package /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+84 verbose lock /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package /Users/ryokota/.npm/e51d5e62--express-sequelize-0-1-3-package.lock
+85 silly lockFile e51d5e62--express-sequelize-0-1-3-package /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+86 silly lockFile e51d5e62--express-sequelize-0-1-3-package /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+87 verbose tar unpack /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+88 silly lockFile 7d4e2e38--express-sequelize-0-1-3-package tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+89 verbose lock tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package /Users/ryokota/.npm/7d4e2e38--express-sequelize-0-1-3-package.lock
+90 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+91 verbose lock tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz /Users/ryokota/.npm/bb005487-ress-sequelize-0-1-3-package-tgz.lock
+92 silly gunzTarPerm modes [ '755', '644' ]
+93 silly gunzTarPerm extractEntry package.json
+94 silly gunzTarPerm extractEntry .npmignore
+95 silly gunzTarPerm extractEntry README.md
+96 silly gunzTarPerm extractEntry LICENSE
+97 silly gunzTarPerm extractEntry app/index.js
+98 silly gunzTarPerm extractEntry app/templates/_app.js
+99 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+100 silly gunzTarPerm extractEntry app/templates/_generator.json
+101 silly gunzTarPerm extractEntry app/templates/_package.json
+102 silly gunzTarPerm extractEntry app/templates/bowerrc
+103 silly gunzTarPerm extractEntry app/templates/editorconfig
+104 silly gunzTarPerm extractEntry app/templates/_bower.json
+105 silly gunzTarPerm extractEntry app/templates/README.md.erb
+106 silly gunzTarPerm extractEntry app/templates/jshintrc
+107 silly gunzTarPerm extractEntry app/templates/models/_index.js
+108 silly gunzTarPerm extractEntry app/templates/public/_index.html
+109 silly gunzTarPerm extractEntry app/templates/public/css/app.css
+110 silly gunzTarPerm extractEntry app/templates/public/js/_app.js
+111 silly gunzTarPerm extractEntry app/templates/public/js/home/_home-controller.js
+112 silly gunzTarPerm extractEntry app/templates/public/views/home/_home.html
+113 silly gunzTarPerm extractEntry app/templates/gitignore
+114 silly gunzTarPerm extractEntry .gitattributes
+115 silly gunzTarPerm extractEntry entity/index.js
+116 silly gunzTarPerm extractEntry entity/templates/_generator.json
+117 silly gunzTarPerm extractEntry entity/templates/models/_entity.js
+118 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-controller.js
+119 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-router.js
+120 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-service.js
+121 silly gunzTarPerm extractEntry entity/templates/public/views/entity/_entities.html
+122 silly gunzTarPerm extractEntry entity/templates/routes/_entities.js
+123 silly gunzTarPerm extractEntry .jshintrc
+124 silly gunzTarPerm extractEntry .editorconfig
+125 silly gunzTarPerm extractEntry .travis.yml
+126 silly gunzTarPerm extractEntry test/test-creation.js
+127 silly gunzTarPerm extractEntry test/test-load.js
+128 verbose read json /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package/package.json
+129 silly lockFile 7d4e2e38--express-sequelize-0-1-3-package tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+130 silly lockFile 7d4e2e38--express-sequelize-0-1-3-package tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+131 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+132 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+133 verbose from cache /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package/package.json
+134 verbose chmod /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz 644
+135 verbose chown /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz [ 10387, 20 ]
+136 silly lockFile 3a52ce78- .
+137 silly lockFile 3a52ce78- .
+138 silly publish { name: 'generator-angular-express-sequelize',
+138 silly publish   version: '0.1.3',
+138 silly publish   description: 'A Yeoman generator for AngularJS + Express + Sequelize',
+138 silly publish   keywords:
+138 silly publish    [ 'yeoman-generator',
+138 silly publish      'Node.js',
+138 silly publish      'Express',
+138 silly publish      'Sequelize',
+138 silly publish      'AngularJS',
+138 silly publish      'Twitter Bootstrap' ],
+138 silly publish   homepage: 'https://github.com/rayokota/generator-angular-express-sequelize',
+138 silly publish   bugs: { url: 'https://github.com/rayokota/generator-angular-express-sequelize/issues' },
+138 silly publish   author: { name: 'Robert Yokota', url: 'https://github.com/rayokota' },
+138 silly publish   main: 'app/index.js',
+138 silly publish   repository:
+138 silly publish    { type: 'git',
+138 silly publish      url: 'git://github.com/rayokota/generator-angular-express-sequelize.git' },
+138 silly publish   scripts: { test: 'mocha' },
+138 silly publish   dependencies:
+138 silly publish    { 'yeoman-generator': '~0.14.0',
+138 silly publish      URIjs: '~1.11.2',
+138 silly publish      lodash: '~2.4.1',
+138 silly publish      'underscore.string': '~2.3.3',
+138 silly publish      pluralize: '~0.0.6',
+138 silly publish      asciify: '~1.3.3' },
+138 silly publish   devDependencies: { mocha: '~1.14.0' },
+138 silly publish   peerDependencies: { yo: '>=1.0.0' },
+138 silly publish   engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+138 silly publish   licenses: [ { type: 'MIT' } ],
+138 silly publish   readme: '# The Angular-Express-Sequelize generator \n\nA [Yeoman](http://yeoman.io) generator for [AngularJS](http://angularjs.org) and [Express](http://expressjs.com) with [Sequelize](http://sequelizejs.com).\n\n## Installation\n\nInstall [Git](http://git-scm.com) and [node.js](http://nodejs.org).  The development mode also requires [SQLite](http://www.sqlite.org).\n\nInstall Yeoman:\n\n    npm install -g yo\n\nInstall the Angular-Express-Sequelize generator:\n\n    npm install -g generator-angular-express-sequelize\n\n## Creating an Express service\n\nIn a new directory, generate the service:\n\n    yo angular-express-sequelize\n\nRun the service:\n\n    node app.js\n\nYour service will run at [http://localhost:3000](http://localhost:3000).\n\n\n## Creating a persistent entity\n\nGenerate the entity:\n\n    yo angular-express-sequelize:entity [myentity]\n\nYou will be asked to specify attributes for the entity, where each attribute has the following:\n\n- a name\n- a type (String, Integer, Float, Boolean, Date, Enum)\n- for a String attribute, an optional minimum and maximum length\n- for a numeric attribute, an optional minimum and maximum value\n- for a Date attribute, an optional constraint to either past values or future values\n- for an Enum attribute, a list of enumerated values\n- whether the attribute is required\n\nFiles that are regenerated will appear as conflicts.  Allow the generator to overwrite these files as long as no custom changes have been made.\n\nRun the service:\n\n    node app.js\n    \nA client-side AngularJS application will now be available by running\n\n\tgrunt server\n\t\nThe Grunt server will run at [http://localhost:9000](http://localhost:9000).  It will proxy REST requests to the Express service running at [http://localhost:3000](http://localhost:3000).\n\nAt this point you should be able to navigate to a page to manage your persistent entities.  \n\nThe Grunt server supports hot reloading of client-side HTML/CSS/Javascript file changes.\n\n',
+138 silly publish   readmeFilename: 'README.md',
+138 silly publish   _id: 'generator-angular-express-sequelize@0.1.3',
+138 silly publish   dist: { shasum: '56419020c8cd13248b495e751ccbce45f8aafcc1' },
+138 silly publish   _from: '.' }
+139 verbose url raw generator-angular-express-sequelize
+140 verbose url resolving [ 'https://registry.npmjs.org/',
+140 verbose url resolving   './generator-angular-express-sequelize' ]
+141 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize
+142 info trying registry request attempt 1 at 21:20:51
+143 http PUT https://registry.npmjs.org/generator-angular-express-sequelize
+144 http 409 https://registry.npmjs.org/generator-angular-express-sequelize
+145 verbose url raw generator-angular-express-sequelize
+146 verbose url resolving [ 'https://registry.npmjs.org/',
+146 verbose url resolving   './generator-angular-express-sequelize' ]
+147 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize
+148 info trying registry request attempt 1 at 21:20:51
+149 http GET https://registry.npmjs.org/generator-angular-express-sequelize
+150 http 200 https://registry.npmjs.org/generator-angular-express-sequelize
+151 warn publish Forced publish over generator-angular-express-sequelize@0.1.3
+152 verbose url raw generator-angular-express-sequelize
+153 verbose url resolving [ 'https://registry.npmjs.org/',
+153 verbose url resolving   './generator-angular-express-sequelize' ]
+154 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize
+155 info trying registry request attempt 1 at 21:20:51
+156 http GET https://registry.npmjs.org/generator-angular-express-sequelize
+157 http 200 https://registry.npmjs.org/generator-angular-express-sequelize
+158 silly registry.get cb [ 200,
+158 silly registry.get   { date: 'Mon, 20 Jan 2014 05:20:51 GMT',
+158 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+158 silly registry.get     etag: '"700KXTST2LLZXIIB78W1N9AM2"',
+158 silly registry.get     'content-type': 'application/json',
+158 silly registry.get     'content-length': '13258',
+158 silly registry.get     'accept-ranges': 'bytes',
+158 silly registry.get     via: '1.1 varnish',
+158 silly registry.get     age: '0',
+158 silly registry.get     'x-served-by': 'cache-lax1431-LAX',
+158 silly registry.get     'x-cache': 'MISS',
+158 silly registry.get     'x-cache-hits': '0',
+158 silly registry.get     'x-timer': 'S1390195251.671761036,VS0,VE43',
+158 silly registry.get     vary: 'Accept',
+158 silly registry.get     'keep-alive': 'timeout=10, max=50',
+158 silly registry.get     connection: 'Keep-Alive' } ]
+159 verbose unpublish removing attachments { shasum: 'b88342bfa52556e77cad8f0b9ccbf9566402f74c',
+159 verbose unpublish   tarball: 'http://registry.npmjs.org/generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz' }
+160 verbose url raw generator-angular-express-sequelize/-rev/7-cd1cd2483b4fd8a5a15690d1d656575c
+161 verbose url resolving [ 'https://registry.npmjs.org/',
+161 verbose url resolving   './generator-angular-express-sequelize/-rev/7-cd1cd2483b4fd8a5a15690d1d656575c' ]
+162 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize/-rev/7-cd1cd2483b4fd8a5a15690d1d656575c
+163 info trying registry request attempt 1 at 21:20:51
+164 http PUT https://registry.npmjs.org/generator-angular-express-sequelize/-rev/7-cd1cd2483b4fd8a5a15690d1d656575c
+165 http 201 https://registry.npmjs.org/generator-angular-express-sequelize/-rev/7-cd1cd2483b4fd8a5a15690d1d656575c
+166 verbose url raw generator-angular-express-sequelize
+167 verbose url resolving [ 'https://registry.npmjs.org/',
+167 verbose url resolving   './generator-angular-express-sequelize' ]
+168 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize
+169 info trying registry request attempt 1 at 21:20:52
+170 http GET https://registry.npmjs.org/generator-angular-express-sequelize
+171 http 200 https://registry.npmjs.org/generator-angular-express-sequelize
+172 silly registry.get cb [ 200,
+172 silly registry.get   { date: 'Mon, 20 Jan 2014 05:20:52 GMT',
+172 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R15B03)',
+172 silly registry.get     etag: '"8FCUJ3E86WMGADVKUXCTKLWYB"',
+172 silly registry.get     'content-type': 'application/json',
+172 silly registry.get     'content-length': '9850',
+172 silly registry.get     'accept-ranges': 'bytes',
+172 silly registry.get     via: '1.1 varnish',
+172 silly registry.get     age: '0',
+172 silly registry.get     'x-served-by': 'cache-lax1422-LAX',
+172 silly registry.get     'x-cache': 'MISS',
+172 silly registry.get     'x-cache-hits': '0',
+172 silly registry.get     'x-timer': 'S1390195252.193886280,VS0,VE51',
+172 silly registry.get     vary: 'Accept',
+172 silly registry.get     'keep-alive': 'timeout=10, max=50',
+172 silly registry.get     connection: 'Keep-Alive' } ]
+173 info detach /generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/8-0581e07127a88df9dd93314fd7567dfb
+174 verbose url raw /generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/8-0581e07127a88df9dd93314fd7567dfb
+175 verbose url resolving [ 'https://registry.npmjs.org/',
+175 verbose url resolving   './generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/8-0581e07127a88df9dd93314fd7567dfb' ]
+176 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/8-0581e07127a88df9dd93314fd7567dfb
+177 info trying registry request attempt 1 at 21:20:52
+178 http DELETE https://registry.npmjs.org/generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/8-0581e07127a88df9dd93314fd7567dfb
+179 http 200 https://registry.npmjs.org/generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/8-0581e07127a88df9dd93314fd7567dfb
+180 verbose publish [ '.' ]
+181 verbose from cache /Users/ryokota/code/generator-angular-express-sequelize/package.json
+182 verbose cache add [ '.', null ]
+183 verbose cache add name=undefined spec="." args=[".",null]
+184 verbose parsed url { pathname: '.', path: '.', href: '.' }
+185 silly lockFile 3a52ce78- .
+186 verbose lock . /Users/ryokota/.npm/3a52ce78-.lock
+187 verbose from cache package.json
+188 verbose tar pack [ '/var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz',
+188 verbose tar pack   '.' ]
+189 verbose tarball /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz
+190 verbose folder .
+191 info prepublish generator-angular-express-sequelize@0.1.3
+192 silly lockFile 1f1177db-tar tar://.
+193 verbose lock tar://. /Users/ryokota/.npm/1f1177db-tar.lock
+194 silly lockFile c7ed3b93-252645-0-506109457463026-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz
+195 verbose lock tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz /Users/ryokota/.npm/c7ed3b93-252645-0-506109457463026-tmp-tgz.lock
+196 silly lockFile 1f1177db-tar tar://.
+197 silly lockFile 1f1177db-tar tar://.
+198 silly lockFile c7ed3b93-252645-0-506109457463026-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz
+199 silly lockFile c7ed3b93-252645-0-506109457463026-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz
+200 verbose tar unpack /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz
+201 silly lockFile aade63bc-252645-0-506109457463026-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package
+202 verbose lock tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package /Users/ryokota/.npm/aade63bc-252645-0-506109457463026-package.lock
+203 silly lockFile c7ed3b93-252645-0-506109457463026-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz
+204 verbose lock tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz /Users/ryokota/.npm/c7ed3b93-252645-0-506109457463026-tmp-tgz.lock
+205 silly gunzTarPerm modes [ '755', '644' ]
+206 silly gunzTarPerm extractEntry package.json
+207 silly gunzTarPerm extractEntry .npmignore
+208 silly gunzTarPerm extractEntry README.md
+209 silly gunzTarPerm extractEntry LICENSE
+210 silly gunzTarPerm extractEntry entity/index.js
+211 silly gunzTarPerm extractEntry entity/templates/_generator.json
+212 silly gunzTarPerm extractEntry entity/templates/models/_entity.js
+213 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-controller.js
+214 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-router.js
+215 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-service.js
+216 silly gunzTarPerm extractEntry entity/templates/public/views/entity/_entities.html
+217 silly gunzTarPerm extractEntry entity/templates/routes/_entities.js
+218 silly gunzTarPerm extractEntry app/index.js
+219 silly gunzTarPerm extractEntry app/templates/_app.js
+220 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+221 silly gunzTarPerm extractEntry app/templates/_generator.json
+222 silly gunzTarPerm extractEntry app/templates/_package.json
+223 silly gunzTarPerm extractEntry app/templates/bowerrc
+224 silly gunzTarPerm extractEntry app/templates/editorconfig
+225 silly gunzTarPerm extractEntry app/templates/_bower.json
+226 silly gunzTarPerm extractEntry app/templates/jshintrc
+227 silly gunzTarPerm extractEntry app/templates/models/_index.js
+228 silly gunzTarPerm extractEntry app/templates/public/_index.html
+229 silly gunzTarPerm extractEntry app/templates/public/css/app.css
+230 silly gunzTarPerm extractEntry app/templates/public/js/_app.js
+231 silly gunzTarPerm extractEntry app/templates/public/js/home/_home-controller.js
+232 silly gunzTarPerm extractEntry app/templates/public/views/home/_home.html
+233 silly gunzTarPerm extractEntry app/templates/README.md.erb
+234 silly gunzTarPerm extractEntry app/templates/gitignore
+235 silly gunzTarPerm extractEntry .gitattributes
+236 silly gunzTarPerm extractEntry .editorconfig
+237 silly gunzTarPerm extractEntry .jshintrc
+238 silly gunzTarPerm extractEntry .travis.yml
+239 silly gunzTarPerm extractEntry test/test-creation.js
+240 silly gunzTarPerm extractEntry test/test-load.js
+241 verbose read json /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package/package.json
+242 silly lockFile aade63bc-252645-0-506109457463026-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package
+243 silly lockFile aade63bc-252645-0-506109457463026-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package
+244 silly lockFile c7ed3b93-252645-0-506109457463026-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz
+245 silly lockFile c7ed3b93-252645-0-506109457463026-tmp-tgz tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/tmp.tgz
+246 verbose from cache /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package/package.json
+247 verbose tar pack [ '/Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz',
+247 verbose tar pack   '/var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package' ]
+248 verbose tarball /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+249 verbose folder /var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package
+250 silly lockFile aade63bc-252645-0-506109457463026-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package
+251 verbose lock tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package /Users/ryokota/.npm/aade63bc-252645-0-506109457463026-package.lock
+252 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+253 verbose lock tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz /Users/ryokota/.npm/bb005487-ress-sequelize-0-1-3-package-tgz.lock
+254 silly lockFile aade63bc-252645-0-506109457463026-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package
+255 silly lockFile aade63bc-252645-0-506109457463026-package tar:///var/folders/6g/1h2r2rrs75n9zh_14mpcjstc000_4l/T/npm-61671/1390195252645-0.506109457463026/package
+256 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+257 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+258 silly lockFile e51d5e62--express-sequelize-0-1-3-package /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+259 verbose lock /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package /Users/ryokota/.npm/e51d5e62--express-sequelize-0-1-3-package.lock
+260 silly lockFile e51d5e62--express-sequelize-0-1-3-package /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+261 silly lockFile e51d5e62--express-sequelize-0-1-3-package /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+262 verbose tar unpack /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+263 silly lockFile 7d4e2e38--express-sequelize-0-1-3-package tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+264 verbose lock tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package /Users/ryokota/.npm/7d4e2e38--express-sequelize-0-1-3-package.lock
+265 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+266 verbose lock tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz /Users/ryokota/.npm/bb005487-ress-sequelize-0-1-3-package-tgz.lock
+267 silly gunzTarPerm modes [ '755', '644' ]
+268 silly gunzTarPerm extractEntry package.json
+269 silly gunzTarPerm extractEntry .npmignore
+270 silly gunzTarPerm extractEntry README.md
+271 silly gunzTarPerm extractEntry LICENSE
+272 silly gunzTarPerm extractEntry app/index.js
+273 silly gunzTarPerm extractEntry app/templates/_app.js
+274 silly gunzTarPerm extractEntry app/templates/Gruntfile.js
+275 silly gunzTarPerm extractEntry app/templates/_generator.json
+276 silly gunzTarPerm extractEntry app/templates/_package.json
+277 silly gunzTarPerm extractEntry app/templates/bowerrc
+278 silly gunzTarPerm extractEntry app/templates/editorconfig
+279 silly gunzTarPerm extractEntry app/templates/_bower.json
+280 silly gunzTarPerm extractEntry app/templates/README.md.erb
+281 silly gunzTarPerm extractEntry app/templates/jshintrc
+282 silly gunzTarPerm extractEntry app/templates/models/_index.js
+283 silly gunzTarPerm extractEntry app/templates/public/_index.html
+284 silly gunzTarPerm extractEntry app/templates/public/css/app.css
+285 silly gunzTarPerm extractEntry app/templates/public/js/_app.js
+286 silly gunzTarPerm extractEntry app/templates/public/js/home/_home-controller.js
+287 silly gunzTarPerm extractEntry app/templates/public/views/home/_home.html
+288 silly gunzTarPerm extractEntry app/templates/gitignore
+289 silly gunzTarPerm extractEntry .gitattributes
+290 silly gunzTarPerm extractEntry entity/index.js
+291 silly gunzTarPerm extractEntry entity/templates/_generator.json
+292 silly gunzTarPerm extractEntry entity/templates/models/_entity.js
+293 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-controller.js
+294 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-router.js
+295 silly gunzTarPerm extractEntry entity/templates/public/js/entity/_entity-service.js
+296 silly gunzTarPerm extractEntry entity/templates/public/views/entity/_entities.html
+297 silly gunzTarPerm extractEntry entity/templates/routes/_entities.js
+298 silly gunzTarPerm extractEntry .jshintrc
+299 silly gunzTarPerm extractEntry .editorconfig
+300 silly gunzTarPerm extractEntry .travis.yml
+301 silly gunzTarPerm extractEntry test/test-creation.js
+302 silly gunzTarPerm extractEntry test/test-load.js
+303 verbose from cache /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package/package.json
+304 silly lockFile 7d4e2e38--express-sequelize-0-1-3-package tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+305 silly lockFile 7d4e2e38--express-sequelize-0-1-3-package tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package
+306 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+307 silly lockFile bb005487-ress-sequelize-0-1-3-package-tgz tar:///Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz
+308 verbose from cache /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package/package.json
+309 verbose chmod /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz 644
+310 verbose chown /Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz [ 10387, 20 ]
+311 silly lockFile 3a52ce78- .
+312 silly lockFile 3a52ce78- .
+313 silly publish { name: 'generator-angular-express-sequelize',
+313 silly publish   version: '0.1.3',
+313 silly publish   description: 'A Yeoman generator for AngularJS + Express + Sequelize',
+313 silly publish   keywords:
+313 silly publish    [ 'yeoman-generator',
+313 silly publish      'Node.js',
+313 silly publish      'Express',
+313 silly publish      'Sequelize',
+313 silly publish      'AngularJS',
+313 silly publish      'Twitter Bootstrap' ],
+313 silly publish   homepage: 'https://github.com/rayokota/generator-angular-express-sequelize',
+313 silly publish   bugs: { url: 'https://github.com/rayokota/generator-angular-express-sequelize/issues' },
+313 silly publish   author: { name: 'Robert Yokota', url: 'https://github.com/rayokota' },
+313 silly publish   main: 'app/index.js',
+313 silly publish   repository:
+313 silly publish    { type: 'git',
+313 silly publish      url: 'git://github.com/rayokota/generator-angular-express-sequelize.git' },
+313 silly publish   scripts: { test: 'mocha' },
+313 silly publish   dependencies:
+313 silly publish    { 'yeoman-generator': '~0.14.0',
+313 silly publish      URIjs: '~1.11.2',
+313 silly publish      lodash: '~2.4.1',
+313 silly publish      'underscore.string': '~2.3.3',
+313 silly publish      pluralize: '~0.0.6',
+313 silly publish      asciify: '~1.3.3' },
+313 silly publish   devDependencies: { mocha: '~1.14.0' },
+313 silly publish   peerDependencies: { yo: '>=1.0.0' },
+313 silly publish   engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+313 silly publish   licenses: [ { type: 'MIT' } ],
+313 silly publish   readme: '# The Angular-Express-Sequelize generator \n\nA [Yeoman](http://yeoman.io) generator for [AngularJS](http://angularjs.org) and [Express](http://expressjs.com) with [Sequelize](http://sequelizejs.com).\n\n## Installation\n\nInstall [Git](http://git-scm.com) and [node.js](http://nodejs.org).  The development mode also requires [SQLite](http://www.sqlite.org).\n\nInstall Yeoman:\n\n    npm install -g yo\n\nInstall the Angular-Express-Sequelize generator:\n\n    npm install -g generator-angular-express-sequelize\n\n## Creating an Express service\n\nIn a new directory, generate the service:\n\n    yo angular-express-sequelize\n\nRun the service:\n\n    node app.js\n\nYour service will run at [http://localhost:3000](http://localhost:3000).\n\n\n## Creating a persistent entity\n\nGenerate the entity:\n\n    yo angular-express-sequelize:entity [myentity]\n\nYou will be asked to specify attributes for the entity, where each attribute has the following:\n\n- a name\n- a type (String, Integer, Float, Boolean, Date, Enum)\n- for a String attribute, an optional minimum and maximum length\n- for a numeric attribute, an optional minimum and maximum value\n- for a Date attribute, an optional constraint to either past values or future values\n- for an Enum attribute, a list of enumerated values\n- whether the attribute is required\n\nFiles that are regenerated will appear as conflicts.  Allow the generator to overwrite these files as long as no custom changes have been made.\n\nRun the service:\n\n    node app.js\n    \nA client-side AngularJS application will now be available by running\n\n\tgrunt server\n\t\nThe Grunt server will run at [http://localhost:9000](http://localhost:9000).  It will proxy REST requests to the Express service running at [http://localhost:3000](http://localhost:3000).\n\nAt this point you should be able to navigate to a page to manage your persistent entities.  \n\nThe Grunt server supports hot reloading of client-side HTML/CSS/Javascript file changes.\n\n',
+313 silly publish   readmeFilename: 'README.md',
+313 silly publish   _id: 'generator-angular-express-sequelize@0.1.3',
+313 silly publish   dist:
+313 silly publish    { shasum: '56419020c8cd13248b495e751ccbce45f8aafcc1',
+313 silly publish      tarball: 'http://registry.npmjs.org/generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz' },
+313 silly publish   _from: '.',
+313 silly publish   _npmVersion: '1.2.30',
+313 silly publish   _npmUser: { name: 'rayokota', email: 'rayokota@gmail.com' } }
+314 verbose url raw generator-angular-express-sequelize
+315 verbose url resolving [ 'https://registry.npmjs.org/',
+315 verbose url resolving   './generator-angular-express-sequelize' ]
+316 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize
+317 info trying registry request attempt 1 at 21:20:52
+318 http PUT https://registry.npmjs.org/generator-angular-express-sequelize
+319 http 409 https://registry.npmjs.org/generator-angular-express-sequelize
+320 verbose url raw generator-angular-express-sequelize
+321 verbose url resolving [ 'https://registry.npmjs.org/',
+321 verbose url resolving   './generator-angular-express-sequelize' ]
+322 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize
+323 info trying registry request attempt 1 at 21:20:53
+324 http GET https://registry.npmjs.org/generator-angular-express-sequelize
+325 http 200 https://registry.npmjs.org/generator-angular-express-sequelize
+326 verbose uploading [ 'generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/9-cf50e12678138ad8debff8931487d34b',
+326 verbose uploading   '/Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz' ]
+327 verbose url raw generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/9-cf50e12678138ad8debff8931487d34b
+328 verbose url resolving [ 'https://registry.npmjs.org/',
+328 verbose url resolving   './generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/9-cf50e12678138ad8debff8931487d34b' ]
+329 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/9-cf50e12678138ad8debff8931487d34b
+330 info trying registry request attempt 1 at 21:20:53
+331 http PUT https://registry.npmjs.org/generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/9-cf50e12678138ad8debff8931487d34b
+332 http 201 https://registry.npmjs.org/generator-angular-express-sequelize/-/generator-angular-express-sequelize-0.1.3.tgz/-rev/9-cf50e12678138ad8debff8931487d34b
+333 verbose publish attached [ 'generator-angular-express-sequelize',
+333 verbose publish   '/Users/ryokota/.npm/generator-angular-express-sequelize/0.1.3/package.tgz',
+333 verbose publish   'generator-angular-express-sequelize-0.1.3.tgz' ]
+334 verbose url raw generator-angular-express-sequelize/0.1.3/-tag/latest
+335 verbose url resolving [ 'https://registry.npmjs.org/',
+335 verbose url resolving   './generator-angular-express-sequelize/0.1.3/-tag/latest' ]
+336 verbose url resolved https://registry.npmjs.org/generator-angular-express-sequelize/0.1.3/-tag/latest
+337 info trying registry request attempt 1 at 21:20:53
+338 http PUT https://registry.npmjs.org/generator-angular-express-sequelize/0.1.3/-tag/latest
+339 http 403 https://registry.npmjs.org/generator-angular-express-sequelize/0.1.3/-tag/latest
+340 info trying registry request attempt 1 at 21:20:54
+341 http PUT https://registry.npmjs.org/generator-angular-express-sequelize/0.1.3/-tag/latest
+342 http 403 https://registry.npmjs.org/generator-angular-express-sequelize/0.1.3/-tag/latest
+343 error publish Error uploading package
+344 error Error: forbidden 0.1.3 time should not be modified 1: generator-angular-express-sequelize/0.1.3/-tag/latest
+344 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:272:14)
+344 error     at Request.init.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/index.js:148:22)
+344 error     at Request.EventEmitter.emit (events.js:99:17)
+344 error     at Request.onResponse (/usr/local/lib/node_modules/npm/node_modules/request/index.js:876:14)
+344 error     at Request.EventEmitter.emit (events.js:126:20)
+344 error     at IncomingMessage.Request.onResponse.buffer (/usr/local/lib/node_modules/npm/node_modules/request/index.js:827:12)
+344 error     at IncomingMessage.EventEmitter.emit (events.js:126:20)
+344 error     at IncomingMessage._emitEnd (http.js:367:10)
+344 error     at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23)
+344 error     at CleartextStream.socketOnData [as ondata] (http.js:1491:20)
+345 error If you need help, you may report this log at:
+345 error     <http://github.com/isaacs/npm/issues>
+345 error or email it to:
+345 error     <npm-@googlegroups.com>
+346 error System Darwin 12.5.0
+347 error command "node" "/usr/local/bin/npm" "publish" "--force"
+348 error cwd /Users/ryokota/code/generator-angular-express-sequelize
+349 error node -v v0.8.26
+350 error npm -v 1.2.30
+351 verbose exit [ 1, true ]
