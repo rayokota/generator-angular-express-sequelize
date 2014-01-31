@@ -2,6 +2,8 @@
 
 A [Yeoman](http://yeoman.io) generator for [AngularJS](http://angularjs.org) and [Express](http://expressjs.com) with [Sequelize](http://sequelizejs.com).
 
+Express is a Javascript-based micro-framework.  For AngularJS integration with other micro-frameworks, see https://github.com/rayokota/MicroFrameworkRosettaStone.
+
 ## Installation
 
 Install [Git](http://git-scm.com) and [node.js](http://nodejs.org).  The development mode also requires [SQLite](http://www.sqlite.org).

@@ -12,9 +12,6 @@ var AngularExpressSequelizeGenerator = module.exports = function AngularExpressS
 
   this.on('end', function () {
     this.installDependencies({ skipInstall: options['skip-install'] });
-    if (!options['skip-install']) {
-      return this.spawnCommand('bundle', ['install']);
-    }
   });
 
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
@@ -48,7 +45,6 @@ AngularExpressSequelizeGenerator.prototype.askFor = function askFor() {
 
 AngularExpressSequelizeGenerator.prototype.app = function app() {
 
-  this.copy('gitignore', '.gitignore');
   this.entities = [];
   this.resources = [];
   this.generatorConfig = {
