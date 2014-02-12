@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-express-sequelize",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A Yeoman generator for AngularJS + Express + Sequelize",
   "keywords": [
     "yeoman-generator",
