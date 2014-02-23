@@ -7,7 +7,7 @@ var util = require('util'),
     pluralize = require('pluralize'),
     asciify = require('asciify');
 
-var AngularExpressSequelizeGenerator = module.exports = function AngularExpressSequelizeGenerator(args, options, config) {
+var ExpressSequelizeGenerator = module.exports = function ExpressSequelizeGenerator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
 
   this.on('end', function () {
@@ -17,16 +17,16 @@ var AngularExpressSequelizeGenerator = module.exports = function AngularExpressS
   this.pkg = JSON.parse(this.readFileAsString(path.join(__dirname, '../package.json')));
 };
 
-util.inherits(AngularExpressSequelizeGenerator, yeoman.generators.Base);
+util.inherits(ExpressSequelizeGenerator, yeoman.generators.Base);
 
-AngularExpressSequelizeGenerator.prototype.askFor = function askFor() {
+ExpressSequelizeGenerator.prototype.askFor = function askFor() {
 
   var cb = this.async();
 
   console.log('\n' +
-    '+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+\n' +
-    '|a|n|g|u|l|a|r| |e|x|p|r|e|s|s| |s|e|q|u|e|l|i|z|e| |g|e|n|e|r|a|t|o|r|\n' +
-    '+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+\n' +
+    '+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+\n' +
+    '|e|x|p|r|e|s|s| |s|e|q|u|e|l|i|z|e| |g|e|n|e|r|a|t|o|r|\n' +
+    '+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+\n' +
     '\n');
 
   var prompts = [{
@@ -43,7 +43,7 @@ AngularExpressSequelizeGenerator.prototype.askFor = function askFor() {
   }.bind(this));
 };
 
-AngularExpressSequelizeGenerator.prototype.app = function app() {
+ExpressSequelizeGenerator.prototype.app = function app() {
 
   this.entities = [];
   this.resources = [];
@@ -81,12 +81,9 @@ AngularExpressSequelizeGenerator.prototype.app = function app() {
   this.mkdir(publicViewDir);
   this.template('public/_index.html', publicDir + 'index.html');
   this.copy('public/css/app.css', publicCssDir + 'app.css');
-  this.template('public/js/_app.js', publicJsDir + 'app.js');
-  this.template('public/js/home/_home-controller.js', publicJsDir + 'home/home-controller.js');
-  this.template('public/views/home/_home.html', publicViewDir + 'home/home.html');
 };
 
-AngularExpressSequelizeGenerator.prototype.projectfiles = function projectfiles() {
+ExpressSequelizeGenerator.prototype.projectfiles = function projectfiles() {
   this.copy('editorconfig', '.editorconfig');
   this.copy('jshintrc', '.jshintrc');
 };

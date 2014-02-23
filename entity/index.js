@@ -126,16 +126,16 @@ EntityGenerator.prototype.askFor = function askFor() {
     this.attrs = this.attrs || [];
     var attrType = props.attrType;
     this.attrs = _.reject(this.attrs, function (attr) { return attr.attrName === props.attrName; });
-    this.attrs.push({ 
-      attrName: props.attrName, 
-      attrType: attrType, 
+    this.attrs.push({
+      attrName: props.attrName,
+      attrType: attrType,
       minLength: props.minLength,
       maxLength: props.maxLength,
       min: props.min,
       max: props.max,
       dateConstraint: props.dateConstraint,
       enumValues: props.enumValues ? props.enumValues.split(',') : [],
-      required: props.required 
+      required: props.required
     });
 
     if (props.again) {
@@ -166,13 +166,13 @@ EntityGenerator.prototype.files = function files() {
   var publicCssDir = publicDir + 'css/';
   var publicJsDir = publicDir + 'js/';
   var publicViewDir = publicDir + 'views/';
-  var publicEntityJsDir = publicJsDir + this.name + '/';
+  // var publicEntityJsDir = publicJsDir + this.name + '/';
   var publicEntityViewDir = publicViewDir + this.name + '/';
-  this.mkdir(publicEntityJsDir);
+  // this.mkdir(publicEntityJsDir);
   this.mkdir(publicEntityViewDir);
-  this.template('../../app/templates/public/_index.html', publicDir + 'index.html');
-  this.template('public/js/entity/_entity-controller.js', publicEntityJsDir + this.name + '-controller.js');
-  this.template('public/js/entity/_entity-router.js', publicEntityJsDir + this.name + '-router.js');
-  this.template('public/js/entity/_entity-service.js', publicEntityJsDir + this.name + '-service.js');
+  // this.template('../../app/templates/public/_index.html', publicDir + 'index.html');
+  // this.template('public/js/entity/_entity-controller.js', publicEntityJsDir + this.name + '-controller.js');
+  // this.template('public/js/entity/_entity-router.js', publicEntityJsDir + this.name + '-router.js');
+  // this.template('public/js/entity/_entity-service.js', publicEntityJsDir + this.name + '-service.js');
   this.template('public/views/entity/_entities.html', publicEntityViewDir + pluralize(this.name) + '.html');
 };
