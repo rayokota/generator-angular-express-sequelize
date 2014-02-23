@@ -14,7 +14,7 @@ Install Yeoman:
 
     npm install -g yo
 
-Install the Angular-Express-Sequelize generator:
+Install the Express-Sequelize generator:
 
     npm install -g generator-express-sequelize
 
@@ -52,14 +52,3 @@ Files that are regenerated will appear as conflicts.  Allow the generator to ove
 Run the service:
 
     node app.js
-
-A client-side AngularJS application will now be available by running
-
-	grunt server
-
-The Grunt server will run at [http://localhost:9000](http://localhost:9000).  It will proxy REST requests to the Express service running at [http://localhost:3000](http://localhost:3000).
-
-At this point you should be able to navigate to a page to manage your persistent entities.
-
-The Grunt server supports hot reloading of client-side HTML/CSS/Javascript file changes.
-
