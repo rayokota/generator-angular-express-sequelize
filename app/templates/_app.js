@@ -26,10 +26,11 @@ if ('development' === app.get('env')) {
 
 <% _.each(entities, function (entity) { %>
 app.get('/<%= baseName %>/<%= pluralize(entity.name) %>', <%= pluralize(entity.name) %>.findAll)
-app.get('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(entity.name) %>.find)
+app.get('/<%= baseName %>/<%= pluralize(entity.name) %>/:<%= entity.name %>Id', <%= pluralize(entity.name) %>.find)
 app.post('/<%= baseName %>/<%= pluralize(entity.name) %>', <%= pluralize(entity.name) %>.create)
-app.put('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(entity.name) %>.update)
-app.delete('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(entity.name) %>.destroy)
+app.put('/<%= baseName %>/<%= pluralize(entity.name) %>/:<%= entity.name %>Id', <%= pluralize(entity.name) %>.update)
+app.del('/<%= baseName %>/<%= pluralize(entity.name) %>/:<%= entity.name %>Id', <%= pluralize(entity.name) %>.destroy)
+app.param('<%= entity.name %>Id',<%= pluralize(entity.name) %>.load)
 <% }); %>
 
 db
