@@ -1,26 +1,24 @@
 {
-  "name": "generator-angular-express-sequelize",
-  "version": "0.1.7",
-  "description": "A Yeoman generator for AngularJS + Express + Sequelize",
+  "name": "generator-express-sequelize",
+  "version": "0.0.1",
+  "description": "A Yeoman generator for Express + Sequelize. Based heavily on [generator-angular-express-sequelize](https://github.com/rayokota/generator-angular-express-sequelize)",
   "keywords": [
     "yeoman-generator",
     "Node.js",
     "Express",
-    "Sequelize",
-    "AngularJS",
-    "Twitter Bootstrap"
+    "Sequelize"
   ],
-  "homepage": "https://github.com/rayokota/generator-angular-express-sequelize",
-  "bugs": "https://github.com/rayokota/generator-angular-express-sequelize/issues",
+  "homepage": "https://github.com/zekenie/generator-express-sequelize",
+  "bugs": "https://github.com/zekenie/generator-express-sequelize/issues",
   "author": {
-    "name": "Robert Yokota",
+    "name": "Zeke Nierenberg",
     "email": "",
-    "url": "https://github.com/rayokota"
+    "url": "https://github.com/zekenie"
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rayokota/generator-angular-express-sequelize.git"
+    "url": "git://github.com/zekenie/generator-express-sequelize.git"
   },
   "scripts": {
     "test": "mocha"

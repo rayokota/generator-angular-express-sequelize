@@ -1,8 +1,10 @@
-# The Angular-Express-Sequelize generator 
+# The Express-Sequelize generator
 
-A [Yeoman](http://yeoman.io) generator for [AngularJS](http://angularjs.org) and [Express](http://expressjs.com) with [Sequelize](http://sequelizejs.com).
+This project is a fork from [generator-angular-express-sequelize](https://github.com/rayokota/generator-angular-express-sequelize).
 
-Express is a Javascript-based micro-framework.  For AngularJS integration with other micro-frameworks, see https://github.com/rayokota/MicroFrameworkRosettaStone.
+A [Yeoman](http://yeoman.io) generator for [Express](http://expressjs.com) with [Sequelize](http://sequelizejs.com).
+
+Express is a Javascript-based micro-framework.
 
 ## Installation
 
@@ -12,15 +14,15 @@ Install Yeoman:
 
     npm install -g yo
 
-Install the Angular-Express-Sequelize generator:
+Install the Express-Sequelize generator:
 
-    npm install -g generator-angular-express-sequelize
+    npm install -g generator-express-sequelize
 
 ## Creating an Express service
 
 In a new directory, generate the service:
 
-    yo angular-express-sequelize
+    yo express-sequelize
 
 Run the service:
 
@@ -33,7 +35,7 @@ Your service will run at [http://localhost:3000](http://localhost:3000).
 
 Generate the entity:
 
-    yo angular-express-sequelize:entity [myentity]
+    yo express-sequelize:entity [myentity]
 
 You will be asked to specify attributes for the entity, where each attribute has the following:
 
@@ -50,14 +52,3 @@ Files that are regenerated will appear as conflicts.  Allow the generator to ove
 Run the service:
 
     node app.js
-    
-A client-side AngularJS application will now be available by running
-
-	grunt server
-	
-The Grunt server will run at [http://localhost:9000](http://localhost:9000).  It will proxy REST requests to the Express service running at [http://localhost:3000](http://localhost:3000).
-
-At this point you should be able to navigate to a page to manage your persistent entities.  
-
-The Grunt server supports hot reloading of client-side HTML/CSS/Javascript file changes.
-
