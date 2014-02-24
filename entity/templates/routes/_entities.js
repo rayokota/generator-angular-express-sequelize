@@ -16,11 +16,11 @@ exports.findAll = function(req, res, next) {
   })
 }
 
-exports.find = function(req, res) {
+exports.find = function(req, res, next) {
   res.json(req.<%=name%>);
 }
 
-exports.create = function(req, res) {
+exports.create = function(req, res, next) {
   db.<%= _.capitalize(name) %>.create(req.body).complete(function(err,entity) {
     if(err) return next(err);
     res.statusCode = 201
@@ -28,14 +28,14 @@ exports.create = function(req, res) {
   })
 }
 
-exports.update = function(req, res) {
+exports.update = function(req, res, next) {
   req.<%= name %>.updateAttributes(req.body).complete(function(err,entity) {
     if(err) return next(err);
     res.json(entity)
   })
 }
 
-exports.destroy = function(req, res) {
+exports.destroy = function(req, res, next) {
   req.<%= name %>.destroy().complete(function(err) {
     if(err) return next(err);
     res.end()

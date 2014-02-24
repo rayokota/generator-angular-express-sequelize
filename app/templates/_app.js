@@ -33,6 +33,11 @@ app.del('/<%= baseName %>/<%= pluralize(entity.name) %>/:<%= entity.name %>Id', 
 app.param('<%= entity.name %>Id',<%= pluralize(entity.name) %>.load)
 <% }); %>
 
+app.use(function(err, req, res, next){
+  console.error(err.stack);
+  res.send(500, 'Something broke!');
+});
+
 db
   .sequelize
   .sync()
