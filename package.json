@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-express-sequelize",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A Yeoman generator for AngularJS + Express + Sequelize",
   "keywords": [
     "yeoman-generator",
@@ -8,7 +8,7 @@
     "Express",
     "Sequelize",
     "AngularJS",
-    "Twitter Bootstrap"
+    "Bootstrap"
   ],
   "homepage": "https://github.com/rayokota/generator-angular-express-sequelize",
   "bugs": "https://github.com/rayokota/generator-angular-express-sequelize/issues",
