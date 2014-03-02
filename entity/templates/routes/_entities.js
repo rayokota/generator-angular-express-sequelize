@@ -39,7 +39,7 @@ exports.destroy = function(req, res) {
   db.<%= _.capitalize(name) %>.find({ where: { id: req.param('id') } }).success(function(entity) {
     if (entity) {
       entity.destroy().success(function() {
-        res.end()
+        res.send(204)
       })
     } else {
       res.send(404)
