@@ -16,6 +16,8 @@ Install the Angular-Express-Sequelize generator:
 
     npm install -g generator-angular-express-sequelize
 
+The above prerequisites can be installed to a VM using the [Angular-Express-Sequelize provisioner](https://github.com/rayokota/provision-angular-express-sequelize).
+
 ## Creating an Express service
 
 In a new directory, generate the service:
