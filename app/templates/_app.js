@@ -1,9 +1,13 @@
-var express = require('express')
+var express        = require('express')
+  , bodyParser     = require('body-parser')
+  , errorHandler   = require('errorhandler')
+  , methodOverride = require('method-override')
+  , morgan         = require('morgan')
+  , http           = require('http')
+  , path           = require('path')
+  , db             = require('./models')
 <% _.each(entities, function (entity) { %>
   , <%= pluralize(entity.name) %> = require('./routes/<%= pluralize(entity.name) %>')<% }); %>
-  , http    = require('http')
-  , path    = require('path')
-  , db      = require('./models')
 
 var app = express()
 
@@ -11,17 +15,14 @@ var app = express()
 app.set('port', process.env.PORT || 3000)
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jade')
-app.use(express.favicon())
-app.use(express.logger('dev'))
-app.use(express.json())
-app.use(express.urlencoded())
-app.use(express.methodOverride())
-app.use(app.router)
+app.use(morgan('dev'))
+app.use(bodyParser())
+app.use(methodOverride())
 app.use(express.static(path.join(__dirname, 'public')))
 
 // development only
 if ('development' === app.get('env')) {
-  app.use(express.errorHandler())
+  app.use(errorHandler())
 }
 
 <% _.each(entities, function (entity) { %>
@@ -29,7 +30,7 @@ app.get('/<%= baseName %>/<%= pluralize(entity.name) %>', <%= pluralize(entity.n
 app.get('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(entity.name) %>.find)
 app.post('/<%= baseName %>/<%= pluralize(entity.name) %>', <%= pluralize(entity.name) %>.create)
 app.put('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(entity.name) %>.update)
-app.delete('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(entity.name) %>.destroy)
+app.del('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(entity.name) %>.destroy)
 <% }); %>
 
 db
@@ -39,7 +40,7 @@ db
     if (err) {
       throw err
     } else {
-      http.createServer(app).listen(app.get('port'), function(){
+      http.createServer(app).listen(app.get('port'), function() {
         console.log('Express server listening on port ' + app.get('port'))
       })
     }
