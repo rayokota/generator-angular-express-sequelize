@@ -19,8 +19,8 @@ fs
   })
 
 Object.keys(db).forEach(function(modelName) {
-  if (db[modelName].options.hasOwnProperty('associate')) {
-    db[modelName].options.associate(db)
+  if (db[modelName].hasOwnProperty('associate')) {
+    db[modelName].associate(db)
   }
 })
 
